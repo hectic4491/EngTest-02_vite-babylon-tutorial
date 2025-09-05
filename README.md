@@ -89,3 +89,37 @@ To display a piece of 3D art on a web page using babylon.js, we need 4 essential
 
 4. **The Camera.**
     - The role of the camera is to display a certain space within a scene.
+
+---
+
+## Let's Start
+
+This is enough code to get us set up with a Babylon.js scene:
+
+```JavaScript
+import * as BABYLON from '@babylonjs/core';
+
+const canvas = document.getElementById("renderCanvas");
+
+const engine = new BABYLON.Engine(canvas);
+
+const createScene = function() {
+  const scene = new BABYLON.Scene(engine);
+
+  return scene;
+}
+
+const scene = createScene();
+
+engine.runRenderLoop(function() {
+  scene.render();
+});
+```
+
+---
+
+## Let's adjust our style.css
+
+We want the canvas to take the full screen size, so let's adjust the CSS of the document.
+
+
