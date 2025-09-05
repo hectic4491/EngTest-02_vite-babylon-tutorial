@@ -121,5 +121,3 @@ engine.runRenderLoop(function() {
 ## Let's adjust our style.css
 
 We want the canvas to take the full screen size, so let's adjust the CSS of the document.
-
-
